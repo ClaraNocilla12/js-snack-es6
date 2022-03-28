@@ -13,17 +13,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 let students = [
     { name: 'Marco', id: 213, grades: 78 },
     { name: 'Paola', id: 110, grades: 96 },
@@ -35,3 +24,20 @@ let students = [
 ];
 
 
+let names=students.map((element) =>
+       element.name.toUpperCase()
+);
+
+console.log(names)
+
+let upGrades=students.filter((element) =>
+    element.grades >70
+);
+
+console.log(upGrades);
+
+let newStudents=upGrades.filter((element) => 
+    element.id>120
+);
+
+console.log(newStudents);
